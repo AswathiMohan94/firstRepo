@@ -1,5 +1,4 @@
-
-row=0
+ row=0
  col=0
  player=1
 declare -A board 
@@ -78,8 +77,8 @@ echo "player X turn"
 else
 echo "player O turn"
 fi
-read -p 'enter row: ' row
-read -p 'enter col: ' col
+read -p 'enter row no and press enter: ' row
+read -p 'enter col no and press enter: ' col
 while (( 1 ))
 do
 if [ $row -ge 4 -o $row -le 0 -o $col -ge 4 -o $col -le 0 ]
